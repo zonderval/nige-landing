@@ -16,11 +16,17 @@ export default function App() {
 }
 
 const AppStyling = styled.div`
-  margin: 0 auto;
+  margin: auto;
+  height: 100%;
   h1 {
     font-family: AfricanCulture;
   }
   p {
     font-family: AmericanTypewriterRegular;
+    font-size: 18px;
+  }
+
+  @media (max-width: 759px) {
+    text-align: center;
   }
 `

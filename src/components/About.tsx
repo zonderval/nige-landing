@@ -1,28 +1,30 @@
 import styled from "@emotion/styled";
 import nige from '../assets/nige_about.png'
 import stamp from '../assets/stamp.png'
-import { ContentStyling, Flexbox} from "./ContentStyling";
+import { Content, Flexbox} from "./StyledDivs";
 
 export default function About() {
 
     return(
         <AboutStyling>
-            <ContentStyling>
+            <Content>
                 <Flexbox>
                     <div className="image-wrapper">
                         <img src={nige}/>
                     </div>
                     <div className="text-wrapper">
-                        <div className="stamp-wrapper">
-                            <img src={stamp}/>
-                        </div>
+                        
                         <p className="salutation">Dear Esteemed Friend,</p>
                         <p>I'm Prince Ekundayo, heir to the Nigerian Prince, who was notorious for sending the 'Nigerian Prince' emails, scamming your parents and grandparents out of money.</p>
                         <p>In a quest for redemption, I present NIGE, a true meme coin, to transform a legacy of empty promises into one of real opportunity and guaranteed enrichment.</p>
                         
                     </div>
+                    
                 </Flexbox>
-            </ContentStyling>
+                <div className="stamp-wrapper">
+                        <img src={stamp}/>
+                </div>
+            </Content>
         </AboutStyling>
     )
 }
@@ -30,39 +32,40 @@ export default function About() {
 const AboutStyling = styled.div`
     position: relative;
     box-sizing: border-box;
-    flex-direction: row;
+    padding-top: 130px;
     width: 100%;
-    height: 500px;
+    height: auto;
     .image-wrapper {
         position: relative;
-        display: block;
-        width: 425px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
         z-index: 10;
-        top: 130px;
+        padding-bottom: 30px;
         img {
-            width: 100%;
+            width: 95%;
             height: auto;
-            display: block;
         }
     }
     .text-wrapper {
         position: relative;
-        width: 350px;
         height: auto;
-        left: 50px;
-        top: 160px;
+        width: 350px;
+        padding-bottom: 30px;
         .salutation {
             font-family: "AmericanTypeWriterBold";
         }
-        .stamp-wrapper {
-            position: absolute;
-            top: -30px;
-            right: -110px;
-            width: 200px;
-            z-index:-1;
-            img {
-                width: 100%
-            }
+    }
+    .stamp-wrapper {
+        position: absolute;
+        width: 300px;
+        float: right;
+        bottom: -70px;
+        right: 30px;
+        z-index:-1;
+        img {
+            width: 100%
         }
     }
 `
