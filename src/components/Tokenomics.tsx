@@ -5,7 +5,7 @@ import { Content, Flexbox } from "./StyledDivs.ts";
 export default function Tokenomics() {
 
     return(
-        <TokenomicsStyling>
+        <TokenomicsStyling id='tokenomics'>
             <Content>
                 <Flexbox>
                     <div className="text-wrapper">
@@ -33,6 +33,7 @@ const TokenomicsStyling = styled.div`
     background-color: ${colors.green};
     width: 100%;
     height: auto;
+    scroll-margin-top: 120px;;
 
     .text-wrapper {
         position: relative;
@@ -40,15 +41,14 @@ const TokenomicsStyling = styled.div`
         box-sizing: border-box;
         width: 340px;
         padding: 5px;
-        margin-top: 25px;
+        margin-top: 50px;
         color: ${colors.light}
     }
-
     .diagram-wrapper {
         position: relative;
         height: 360px;
         width: 360px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         margin-top: 50px;
 
         .circle-white{
@@ -60,7 +60,7 @@ const TokenomicsStyling = styled.div`
             stroke: ${colors.gold};
             stroke-width: 25px;
         }
-
+        
         h1 {
             position: absolute;
             color: ${colors.gold};

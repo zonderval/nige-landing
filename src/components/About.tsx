@@ -12,17 +12,14 @@ export default function About() {
                     <div className="image-wrapper">
                         <img src={nige}/>
                     </div>
-                    <div className="text-wrapper">
-                        
+                    <div className="text-wrapper">               
                         <p className="salutation">Dear Esteemed Friend,</p>
                         <p>I'm Prince Ekundayo, heir to the Nigerian Prince, who was notorious for sending the 'Nigerian Prince' emails, scamming your parents and grandparents out of money.</p>
-                        <p>In a quest for redemption, I present NIGE, a true meme coin, to transform a legacy of empty promises into one of real opportunity and guaranteed enrichment.</p>
-                        
-                    </div>
-                    
+                        <p>In a quest for redemption, I present NIGE, a true meme coin, to transform a legacy of empty promises into one of real opportunity and guaranteed enrichment.</p>   
+                    </div> 
                 </Flexbox>
                 <div className="stamp-wrapper">
-                        <img src={stamp}/>
+                    <img src={stamp}/>
                 </div>
             </Content>
         </AboutStyling>
@@ -52,7 +49,7 @@ const AboutStyling = styled.div`
         position: relative;
         height: auto;
         width: 350px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         .salutation {
             font-family: "AmericanTypeWriterBold";
         }

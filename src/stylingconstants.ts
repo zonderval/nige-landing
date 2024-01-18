@@ -3,7 +3,7 @@ export const colors = {
     green: "#027F22",
     gold: "#F5B11E",
     light: "#F8F7E5",
-
+    dark: "#3C4136"
 }
 
 export const dimensions = {
